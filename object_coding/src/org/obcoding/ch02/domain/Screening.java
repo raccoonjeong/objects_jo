@@ -1,4 +1,4 @@
-package org.obcoding.ch02;
+package org.obcoding.ch02.domain;
 
 import java.time.LocalDateTime;
 

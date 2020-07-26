@@ -1,4 +1,6 @@
-package org.obcoding.ch02;
+package org.obcoding.ch02.condition;
+
+import org.obcoding.ch02.domain.Screening;
 
 import java.time.DayOfWeek;
 import java.time.LocalTime;
@@ -14,6 +16,7 @@ public class PeriodCondition implements DiscountCondition {
         this.endTime = endTime;
     }
 
+    // 상영 요일 및 시간이 해당 일자 dayOfweek 및 startTime, endTime 사이에 있는지 체크
     @Override
     public boolean isSatisfiedBy(Screening screening) {
         return screening.getStartTime().getDayOfWeek().equals(dayOfWeek) &&

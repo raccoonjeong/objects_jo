@@ -1,4 +1,6 @@
-package org.obcoding.ch02;
+package org.obcoding.ch02.domain;
+
+import org.obcoding.ch02.policy.DiscountPolicy;
 
 import java.time.Duration;
 

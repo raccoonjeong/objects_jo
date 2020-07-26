@@ -1,4 +1,8 @@
-package org.obcoding.ch02;
+package org.obcoding.ch02.policy;
+
+import org.obcoding.ch02.domain.Money;
+import org.obcoding.ch02.domain.Screening;
+import org.obcoding.ch02.condition.DiscountCondition;
 
 public class PercentDiscountPolicy extends DiscountPolicy{
     private double percent;
