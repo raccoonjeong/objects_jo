@@ -4,7 +4,7 @@ import org.obcoding.ch02.domain.Money;
 import org.obcoding.ch02.domain.Screening;
 import org.obcoding.ch02.condition.DiscountCondition;
 
-public class PercentDiscountPolicy extends DiscountPolicy{
+public class PercentDiscountPolicy extends DefaultDiscountPolicy{
     private double percent;
 
     public PercentDiscountPolicy(double percent, DiscountCondition... conditions) {

@@ -4,7 +4,7 @@ import org.obcoding.ch02.domain.Money;
 import org.obcoding.ch02.domain.Screening;
 import org.obcoding.ch02.condition.DiscountCondition;
 
-public class AmountDiscountPolicy extends DiscountPolicy{
+public class AmountDiscountPolicy extends DefaultDiscountPolicy{
     private Money discountAmount;
 
     public AmountDiscountPolicy(Money discountAmount, DiscountCondition... conditions) {
