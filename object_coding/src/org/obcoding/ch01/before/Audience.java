@@ -1,4 +1,4 @@
-package org.obcoding.ch01;
+package org.obcoding.ch01.before;
 
 public class Audience {
     private Bag bag;
@@ -7,7 +7,7 @@ public class Audience {
         this.bag = bag;
     }
 
-    public Long buy(Ticket ticket) {
-        return bag.hold(ticket);
+    public Bag getBag() {
+        return bag;
     }
 }
