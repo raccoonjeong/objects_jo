@@ -1,4 +1,4 @@
-package org.obcoding.ch01.after;
+package org.obcoding.ch01.step02;
 
 public class Audience {
     private Bag bag;

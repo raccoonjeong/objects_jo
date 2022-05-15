@@ -1,4 +1,4 @@
-package org.obcoding.ch01.before;
+package org.obcoding.ch01.step01;
 
 public class Theater {
     private TicketSeller ticketSeller;

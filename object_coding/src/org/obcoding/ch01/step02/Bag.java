@@ -1,4 +1,4 @@
-package org.obcoding.ch01.before;
+package org.obcoding.ch01.step02;
 
 // 초대장, 티켓, 현금
 public class Bag {
