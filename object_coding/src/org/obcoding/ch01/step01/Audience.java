@@ -1,5 +1,6 @@
 package org.obcoding.ch01.step01;
 
+// 관람객: 가방을 소지할 수 있음
 public class Audience {
     private Bag bag;
 
@@ -10,4 +11,5 @@ public class Audience {
     public Bag getBag() {
         return bag;
     }
+
 }

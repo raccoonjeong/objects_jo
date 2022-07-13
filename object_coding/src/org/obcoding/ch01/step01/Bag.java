@@ -1,20 +1,33 @@
 package org.obcoding.ch01.step01;
 
-// 초대장, 티켓, 현금
+// 가방: 관람객이 소지품을 보관함
 public class Bag {
-    private Long amount;
-    private Invitaion invitaion;
-    private Ticket ticket;
+    private Long amount; // 현금
+    private Invitation invitation; // 초대장
+    private Ticket ticket; // 티켓
 
-    public boolean hasInvitaion() {
-        return invitaion != null;
+
+    public Bag(long amount) {
+        this(null, amount);
+    }
+    //
+    public Bag(Invitation invitation, long amount) {
+        this.invitation = invitation;
+        this.amount = amount;
+    }
+
+    public boolean hasInvitation() {
+        // 초대장 보유 여부
+        return invitation != null;
     }
 
     public boolean hasTicket() {
+        // 티켓 보유 여부
         return ticket != null;
     }
 
     public void setTicket(Ticket ticket) {
+        // 초대장을 티켓으로 교환하는 메서드
         this.ticket = ticket;
     }
 
@@ -24,14 +37,5 @@ public class Bag {
 
     public void plusAmount(Long amount) {
         this.amount += amount;
-    }
-
-    public Bag(long amount) {
-        this(null, amount);
-    }
-
-    public Bag(Invitaion invitaion, long amount) {
-        this.invitaion = invitaion;
-        this.amount = amount;
     }
 }
