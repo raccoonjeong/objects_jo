@@ -25,4 +25,13 @@ public class Screening {
     public Money getMovieFee() {
         return movie.getFee();
     }
+    
+    // 예매하는 기능
+    public Reservation reserve(Customer customer, int audienceCount) {
+        return new Reservation(customer, this, calculateFee(audienceCount), audienceCount);
+    }
+
+    private Money calculateFee(int audienceCount) {
+        return movie.calculateMovieFee(this).times(audienceCount);
+    }
 }
