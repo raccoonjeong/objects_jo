@@ -1,5 +1,7 @@
 package org.obcoding.ch02.step01;
 
+import org.obcoding.ch02.step01.Customer;
+
 import java.time.LocalDateTime;
 
 // 상영: 사용자들이 예매하는 대상
