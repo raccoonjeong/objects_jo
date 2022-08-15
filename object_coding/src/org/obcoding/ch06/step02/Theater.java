@@ -1,6 +1,6 @@
 package org.obcoding.ch06.step02;
 
-import org.obcoding.ch01.step01.Audience;
+import org.obcoding.ch06.step02.Audience;
 import org.obcoding.ch01.step01.Ticket;
 import org.obcoding.ch06.step02.TicketSeller;
 
@@ -12,6 +12,6 @@ public class Theater {
     }
 
     public void enter(Audience audience) {
-       ticketSeller.setTicket(audience);
+       ticketSeller.sellTo(audience);
     }
 }

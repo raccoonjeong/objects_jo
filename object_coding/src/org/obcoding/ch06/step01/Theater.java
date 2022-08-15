@@ -1,11 +1,11 @@
 package org.obcoding.ch06.step01;
 
-import org.obcoding.ch01.step01.Audience;
+import org.obcoding.ch06.step01.Audience;
 import org.obcoding.ch01.step01.Ticket;
-import org.obcoding.ch01.step01.TicketSeller;
+import org.obcoding.ch06.step01.TicketSeller;
 
 public class Theater {
-    private org.obcoding.ch01.step01.TicketSeller ticketSeller;
+    private TicketSeller ticketSeller;
 
     public Theater(TicketSeller ticketSeller) {
         this.ticketSeller = ticketSeller;
